@@ -1,0 +1,9 @@
+<table class="table table-striped table-condensed">
+  <tr>
+    <td><%= @todolist.name %></td>
+    <td><%= @todolist.due_date %></td>
+    <td><%= simple_format(@todolist.note) %></td>
+
+  </tr>
+</table>
+<%= link_to 'Back to index', todolists_path %>
